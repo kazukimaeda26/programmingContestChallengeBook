@@ -2,17 +2,17 @@
 #include <cstdio>
 
 using namespace std;
-//stackは上からpop取り除いていく。上を確認するにはtop()methodで
+
 int main(){
   stack<int> s;
   s.push(1);
+  printf("%d\n", s.top());
   s.push(2);
+  printf("%d\n", s.top());
   s.push(3);
   printf("%d\n", s.top());
   s.pop();
   printf("%d\n", s.top());
   s.pop();
   printf("%d\n", s.top());
-  s.pop();
-  return 0; 
 }
